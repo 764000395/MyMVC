@@ -1,6 +1,8 @@
 <?php
 //url形式 index.php?contorller=控制器名&method=方法名
 require 'function.php';
+require 'config.php';
+$view = ORG('Smarty/', 'Smarty', $config['view']);
 $controllerAllow = array('test', 'index');
 $methodAllow = array('test', 'index', 'show');
 $controller = in_array(strtolower($_GET['controller']), $controllerAllow) ? daddslashes($_GET['controller']) : 'index';

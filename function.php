@@ -35,7 +35,7 @@ function daddslashes($str) {
 /*
 *	path 路径
 *	name 第三方类名
-*	params 该类初始化的时候需要指定、赋值的属性，格式为 array(属性名=>属性值, 属性名1=>属性值1)
+*	params 该类初始化的时候需要指定、赋值的属性，格式为 array(属性名=>属性值, 属性名1=>属性值1, ...)
 */
 function ORG($path, $name, $params = array()){
 	require 'libs/ORG/'.$path.$name.'.class.php'; 
